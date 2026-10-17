@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noir Café | Kahvenin Zarafeti</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#211b18;--cream:#f4eee4;--gold:#b99a63;--muted:#b9afa4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark)}
+header{height:82px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:var(--dark);color:var(--cream)}
+.logo{font-family:'Playfair Display',serif;font-size:27px;letter-spacing:2px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:28px}
+nav a{color:#eee3d5;text-decoration:none;font-size:13px}
+nav a:hover{color:var(--gold)}
+.hero{min-height:590px;display:flex;align-items:center;padding:80px 9%;color:white;background:linear-gradient(90deg,rgba(24,18,15,.88),rgba(24,18,15,.25)),url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-content{max-width:600px}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;color:var(--gold);font-size:11px;margin-bottom:24px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,82px);font-weight:500;line-height:1.08;margin-bottom:25px}
+.hero p{font-size:16px;line-height:1.9;color:#eee4d9;max-width:460px}
+.btn{display:inline-block;margin-top:32px;padding:15px 25px;background:var(--gold);color:#211b18;text-decoration:none;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+section{padding:90px 8%}
+.section-head{text-align:center;margin-bottom:45px}
+.section-head .eyebrow{margin-bottom:14px}
+h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);font-weight:500}
+.intro{max-width:650px;margin:18px auto 0;color:#72665d;line-height:1.9;font-size:14px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:#fffaf3}
+.card img{width:100%;height:250px;object-fit:cover;display:block}
+.card-body{padding:25px}
+.card h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:500;margin-bottom:10px}
+.card p{font-size:13px;color:#766b61;line-height:1.8}
+.price{display:block;margin-top:18px;color:#947443;font-size:13px;letter-spacing:1px}
+.story{background:#e9dfd1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.story img{width:100%;height:430px;object-fit:cover}
+.story-copy p{margin-top:22px;color:#655950;line-height:2;font-size:14px}
+.story-copy .btn{background:var(--dark);color:var(--cream)}
+.quote{text-align:center;background:var(--dark);color:var(--cream);padding:75px 10%}
+.quote p{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,42px);line-height:1.5}
+.quote span{display:block;margin-top:20px;color:var(--gold);font-size:11px;letter-spacing:3px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact p{margin-top:16px;color:#766b61;line-height:1.9;font-size:14px}
+footer{background:var(--dark);color:var(--muted);text-align:center;padding:28px;font-size:12px}
+footer span{color:var(--gold)}
+@media(max-width:700px){header{height:auto;padding:22px 6%;align-items:flex-start;gap:18px;flex-direction:column}nav{gap:17px;flex-wrap:wrap}nav a{font-size:12px}.hero{min-height:520px;padding:65px 7%}section{padding:65px 6%}.features{grid-template-columns:1fr}.card img{height:260px}.story,.contact{grid-template-columns:1fr;gap:30px}.story img{height:300px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">NOIR <span>CAFÉ</span></div>
+  <nav>
+    <a href="#hikayemiz">Hikâyemiz</a>
+    <a href="#menu">Menümüz</a>
+    <a href="#mekan">Mekânımız</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Kahvenin zarafetle buluştuğu yer</div>
+    <h1>Her fincanda<br>bir hikâye.</h1>
+    <p>Özenle seçilen kahve çekirdekleri, zamansız bir atmosfer ve kendinize ayırdığınız özel anlar.</p>
+    <a class="btn" href="#menu">Menüyü keşfet&nbsp; ↗</a>
+  </div>
+</section>
+<section id="menu">
+  <div class="section-head">
+    <div class="eyebrow">Özenle hazırlandı</div>
+    <h2>Favori lezzetlerimiz</h2>
+    <p class="intro">Kahvenize eşlik edecek küçük mutluluklar, her gün taze ve sevgiyle hazırlanır.</p>
+  </div>
+  <div class="features">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=900&q=80" alt="Özenle hazırlanmış filtre kahve">
+      <div class="card-body"><h3>Özel Demleme</h3><p>Karakterli aromalar ve dengeli bir içim için özenle demlenir.</p><span class="price">KAHVE KOLEKSİYONU</span></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Çikolatalı pasta">
+      <div class="card-body"><h3>Günün Tatlısı</h3><p>Kahve molanızı güzelleştiren, iştah açıcı tatlı seçenekleri.</p><span class="price">GÜNLÜK TAZE LEZZETLER</span></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Sütlü kahve">
+      <div class="card-body"><h3>İmza Latte</h3><p>Kremsi dokusu ve yumuşak aromasıyla günün en güzel molası.</p><span class="price">NOIR FAVORİSİ</span></div>
+    </article>
+  </div>
+</section>
+<section class="story" id="hikayemiz">
+  <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85" alt="Sıcak ışıklı şık kafe iç mekânı">
+  <div class="story-copy">
+    <div class="eyebrow">Noir ruhu</div>
+    <h2>Şehrin içinde,<br>kendine ait bir an.</h2>
+    <p>Bazen ihtiyacımız olan tek şey, güzel bir kahve ve zamanın biraz yavaşladığı bir köşedir. Noir Café; iyi lezzetleri, incelikli detayları ve sakin atmosferi bir araya getiren örnek bir kafe konseptidir.</p>
+    <a class="btn" href="#mekan">Mekânı keşfet</a>
+  </div>
+</section>
+<section class="quote" id="mekan">
+  <p>“Güzel şeyler, acele etmeden yaşanan anlarda saklıdır.”</p>
+  <span>YAVAŞLA · TADINI ÇIKAR · HİSSET</span>
+</section>
+<section class="contact" id="iletisim">
+  <div>
+    <div class="eyebrow">Bir kahveye bekleriz</div>
+    <h2>Buluşalım mı?</h2>
+    <p>Bu alan örnek tasarım içindir. Beğenildiğinde gerçek kafenin adresi, çalışma saatleri ve iletişim bilgileri burada yer alabilir.</p>
+  </div>
+  <div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:25px;font-weight:500">Noir Café</h3>
+    <p>Adres: Buraya kafe adresi eklenecek</p>
+    <p>Çalışma saatleri: Buraya saatler eklenecek</p>
+    <p>İletişim: Buraya telefon veya sosyal medya bağlantısı eklenecek</p>
+  </div>
+</section>
+</main>
+<footer>© 2026 <span>NOIR CAFÉ</span> · Tasarım konsepti</footer>
+</body>
+</html>
+
